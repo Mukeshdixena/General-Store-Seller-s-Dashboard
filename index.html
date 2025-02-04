@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Edit & Delete</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>General-Store-Seller-s-Dashboard</h2>
+        <form id="myForm">
+            <label for="name">Item Name:</label>
+            <input type="text" id="name" placeholder="Enter item name" required>
+
+            <label for="description">Description:</label>
+            <input type="text" id="description" placeholder="Enter Description" required>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" placeholder="Enter Quantity" required>
+
+            <button type="submit">Submit</button>
+        </form>
+        <h3>Submitted Details</h3>
+        <ul id="detailsList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
